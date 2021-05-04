@@ -6,7 +6,7 @@ import {
   selectAllContact,
   clearAllContact,
   deleteAllContact,
-} from "../../actions/contactAction";
+} from "../../actions/contactAction.js";
 
 const Contacts = () => {
   const dispatch = useDispatch();

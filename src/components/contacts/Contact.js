@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "react-avatar";
 import { Link } from "react-router-dom";
-import { deleteContact } from "../../actions/contactAction";
+import { deleteContact } from "../../actions/contactAction.js";
 import { useDispatch } from "react-redux";
 
 const Contact = ({ contact, selectAll }) => {
@@ -26,10 +26,10 @@ const Contact = ({ contact, selectAll }) => {
       <td>{email}</td>
       <td className="actions">
         <Link to={`/contacts/edit/${id}`}>
-          <span className="material-icons mr-2">edit</span>
+          <span className="material-icons mr-2 text-success">edit</span>
         </Link>
         <span
-          className="material-icons  text-danger"
+          className="material-icons text-danger edit"
           onClick={() => dispatch(deleteContact(id))}
         >
           remove_circle

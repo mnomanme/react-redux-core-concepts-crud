@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getContact, updateContact } from "../../actions/contactAction";
+import { getContact, updateContact } from "../../actions/contactAction.js";
 import shortid from "shortid";
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
