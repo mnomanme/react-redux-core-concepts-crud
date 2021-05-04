@@ -39,7 +39,7 @@ const EditContact = () => {
   };
   return (
     <div className="card border-0 shadow">
-      <div className="card-header">Add a Contact</div>
+      <div className="card-header bg-thead text-white">Edit a Contact</div>
       <div className="card-body">
         <form onSubmit={(e) => onUpdateContact(e)}>
           <div className="form-group">

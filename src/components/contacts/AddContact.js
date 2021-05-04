@@ -25,7 +25,7 @@ const AddContact = () => {
 
   return (
     <div className="card border-0 shadow">
-      <div className="card-header">Add a Contact</div>
+      <div className="card-header bg-thead text-white">Add a Contact</div>
       <div className="card-body">
         <form onSubmit={(e) => craeteContact(e)}>
           <div className="form-group">

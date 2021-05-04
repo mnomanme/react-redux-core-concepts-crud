@@ -31,11 +31,11 @@ const Contacts = () => {
           className="btn btn-danger mb-3"
           onClick={() => dispatch(deleteAllContact())}
         >
-          delete all
+          Delete all
         </button>
       ) : null}
       <table className="table shadow">
-        <thead>
+        <thead className="bg-thead">
           <tr>
             <th>
               <div className="custom-control custom-checkbox">
@@ -58,7 +58,7 @@ const Contacts = () => {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="bg-tbody">
           {contacts.map((contact) => (
             <Contact contact={contact} key={contact.id} selectAll={selectAll} />
           ))}
